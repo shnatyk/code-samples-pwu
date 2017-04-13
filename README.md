@@ -26,9 +26,10 @@ Simple module, which helps dealing with Google Analytics events on the website. 
 Module responsible for configuration and use of Image Carousel external plugin. It has default options and element selectors, which can be overwritten in a simple way. Extending this module helps define different types of Image Carousels, which can be reusable across whole project (for a good practice of DRY rule). 
 
 ## pwu-sass-mixin-sample1.scss
+Helps creating new color variants of "promo-panel" element. The idea was taken from Bootsrap Sass mixins and it is good for maintaining different styles of single UI element.
 
 ## pwu-sass-module-sample1.scss
-
+Sample of Sass module for styling grouped elements, which consists of icons on the left and text on the right. It shows how you can easily implement BEM CSS methodology thanks to Sass features, as well as how to make use of media queries to follow Mobile First approach of Responsive Web Design.
 
 
 
