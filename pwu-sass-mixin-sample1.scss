@@ -1,0 +1,23 @@
+/* - - - - - 
+example usage: 
+
+.promo-panel_week-offer {
+  @include promo-panel-variant(#FAD257, #000000);
+}
+- - - - - */ 
+
+@mixin promo-panel-variant($color-fg, $color-bg) {
+  background-color: $color-bg;
+  border-color: mix($color-fg, $color-bg, 20%);
+
+  // style childrens
+  & .promo-panel__title {
+    background: mix($color-fg, $color-bg, 10%);
+    border-color: mix($color-fg, $color-bg, 20%);
+    color: $color-fg;
+  }
+
+  & .promo-panel__label {
+    color: $color-fg;
+  }
+}

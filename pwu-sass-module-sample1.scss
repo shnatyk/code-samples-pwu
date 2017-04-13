@@ -1,0 +1,27 @@
+@import 'variables';
+
+@import 'blocks/iconic-info__icon';
+@import 'blocks/iconic-info__text';
+
+.iconic-info {
+  @include make-xs-column($iconic-info--cols, 0);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $screen-sm) {
+    @include make-sm-column($iconic-info--cols, $iconic-info-sm--pad-h * 2);
+    justify-content: flex-start;
+  }
+
+ // element modifiers
+  &_first {
+    // use it for proper styling of first element in the row
+    padding-left: 0;
+  }
+
+  &_last {
+    // use it for proper styling of last element in the row
+    padding-right: 0;
+  }
+}
